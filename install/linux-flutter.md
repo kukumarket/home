@@ -20,3 +20,25 @@ export PATH=~/work/flutter/bin:$PATH
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
+
+
+
+    On Ubuntu, if you installed from snap, you should set these two parameters:
+
+    flutter config --android-sdk="$HOME/Android/Sdk"
+    flutter config --android-studio-dir="/snap/android-studio/current/android-studio/"
+
+[模拟器]
+    对于 Debian/Ubuntu 系统，使用 APT-GET 命令 或 APT 命令 来安装 anbox。
+
+    $ sudo apt install anbox
+
+[adb调试工具]
+默认情况下，Anbox 并没有带有 Google Play Store。因此，我们需要手动下载每个应用程序（APK），并使用 Android 调试桥（ADB）安装它。
+
+ADB 工具在大多数的发行版的软件仓库是轻易可获得的，我们可以容易地安装它。
+对于 Debian/Ubuntu 系统，使用 APT-GET 命令 或 APT 命令 来安装 ADB。
+
+    $ sudo apt install android-tools-adb
+
+
